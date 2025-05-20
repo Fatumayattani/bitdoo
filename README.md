@@ -50,17 +50,31 @@ Experience Bitdoo live: [bitdoo.netlify.app](https://bitdoo.netlify.app)
 
 ## 🏗️ Project Architecture
 
-```
-bitdoo/
-├── app/                   # Next.js 13 App Router
-│   ├── (dashboard)/       # Creator dashboard
-│   ├── api/               # Serverless endpoints
-│   └── streaming/         # Payment streaming UI
-│
-├── lib/                   # WebLN utilities & payment logic
-├── components/            # Radix UI primitives
-├── public/                # Static assets
-└── styles/                # Tailwind CSS configurations
+```mermaid
+flowchart TD
+    subgraph Frontend[Next.js 13 Frontend]
+        A[App Router] --> B[Dashboard]
+        A --> C[Streaming UI]
+        B --> D[Recharts Visualizations]
+        C --> E[WebLN Payment Handler]
+        F[React Components] --> G[Radix UI Primitives]
+        F --> H[Tailwind Styling]
+    end
+
+    subgraph Bitcoin[Bitcoin Integration]
+        E --> I[WebLN Provider]
+        I --> J[Lightning Wallet]
+        J --> K[Lightning Network]
+    end
+
+    subgraph Hosting[Deployment]
+        L[Netlify] --> M[Serverless Functions]
+        M -->|API Routes| A
+    end
+
+    User -->|Connects Wallet| C
+    User -->|Views Content| C
+    K -->|Settles Payments| L
 ```
 
 ### Key Technical Decisions
