@@ -105,7 +105,7 @@ flowchart TD
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/bitdoo.git
+git clone https://github.com/Fatumayattani/bitdoo.git
 cd bitdoo
 npm install
 npm run dev
