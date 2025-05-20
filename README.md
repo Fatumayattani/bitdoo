@@ -1,6 +1,5 @@
 # Bitdoo 🌟
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/<your-badge-id>/deploy-status)](https://app.netlify.com/sites/bitdoo/deploys)
 ![Next.js](https://img.shields.io/badge/Next.js-13.0%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
