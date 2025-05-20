@@ -162,4 +162,3 @@ Distributed under the MIT License. See `LICENSE` for details.
 - Lightning Network developers for enabling instant Bitcoin transactions
 - Radix UI team for accessible primitives
 - WebLN community for browser standardization efforts
-``` 
