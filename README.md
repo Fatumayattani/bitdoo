@@ -36,7 +36,8 @@ Empowering creators to earn Bitcoin as their content/services are consumed, powe
 - 📱 **Responsive UI**  
   Built with mobile-first Tailwind CSS components
 
-[![Bitdoo Demo](https://placehold.co/600x400?text=Live+Demo+Video)](https://your-demo-link.com)
+![Bitdoo Logo](./public/bitd.png)
+
 
 ---
 
