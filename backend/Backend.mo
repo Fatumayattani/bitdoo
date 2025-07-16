@@ -1,4 +1,4 @@
-actor class Backend() {
+npm run setupactor class Backend() {
   stable var counter = 0;
 
   // Get the current count
