@@ -55,29 +55,30 @@ const DashboardPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50 py-8 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-orange-100/10 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">
+        <div className="mb-8 relative z-10 animate-fade-in-down">
+          <h1 className="text-3xl font-bold text-gray-900 gradient-text">
             Welcome back, {user?.name}!
           </h1>
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-600 mt-2 text-lg">
             Here's an overview of your lending activity on Bitdoo
           </p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 relative z-10">
           {stats.map((stat, index) => (
-            <div key={index} className="bg-white rounded-lg shadow p-6">
+            <div key={index} className="card-enhanced rounded-xl shadow-lg p-6 hover-lift animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="flex items-center">
-                <div className={`p-2 rounded-lg bg-gray-100 ${stat.color}`}>
-                  <stat.icon className="h-6 w-6" />
+                <div className={`p-3 rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 ${stat.color} hover-glow`}>
+                  <stat.icon className="h-7 w-7" />
                 </div>
                 <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600">{stat.label}</p>
-                  <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-sm font-semibold text-gray-600">{stat.label}</p>
+                  <p className="text-2xl font-bold text-gray-900 animate-number-count">{stat.value}</p>
                 </div>
               </div>
             </div>
@@ -86,45 +87,47 @@ const DashboardPage: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Recent Loans */}
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg shadow">
-              <div className="px-6 py-4 border-b border-gray-200">
+          <div className="lg:col-span-2 animate-slide-in-left relative z-10">
+            <div className="card-enhanced rounded-2xl shadow-xl overflow-hidden">
+              <div className="px-6 py-5 border-b border-gray-100 bg-gradient-to-r from-orange-50 to-white">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-lg font-semibold text-gray-900">Recent Loans</h2>
+                  <h2 className="text-xl font-bold text-gray-900">Recent Loans</h2>
                   <Link
                     to="/loan-request"
-                    className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 transition-colors"
+                    className="btn-primary inline-flex items-center px-4 py-2 border border-transparent text-sm leading-4 font-semibold rounded-lg text-white shadow-lg hover-glow transition-all duration-300"
                   >
                     <Plus className="h-4 w-4 mr-1" />
                     New Loan
                   </Link>
                 </div>
               </div>
-              <div className="divide-y divide-gray-200">
+              <div className="divide-y divide-gray-100">
                 {recentLoans.map((loan) => (
-                  <div key={loan.id} className="px-6 py-4">
+                  <div key={loan.id} className="px-6 py-5 hover:bg-gray-50 transition-colors duration-300">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
-                        <Bitcoin className="h-5 w-5 text-orange-600 mr-2" />
-                        <span className="font-medium text-gray-900">{loan.amount}</span>
+                        <div className="bg-orange-100 p-2 rounded-lg mr-3">
+                          <Bitcoin className="h-5 w-5 text-orange-600" />
+                        </div>
+                        <span className="font-bold text-gray-900">{loan.amount}</span>
                         <span
-                          className={`ml-2 px-2 py-1 text-xs font-medium rounded-full ${getStatusColor(
+                          className={`ml-3 px-3 py-1 text-xs font-semibold rounded-full ${getStatusColor(
                             loan.status
                           )}`}
                         >
                           {loan.status}
                         </span>
                       </div>
-                      <span className="text-sm text-gray-500">Due: {loan.dueDate}</span>
+                      <span className="text-sm font-medium text-gray-500">Due: {loan.dueDate}</span>
                     </div>
-                    <p className="text-gray-600 mb-2">{loan.purpose}</p>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    <p className="text-gray-600 mb-3 leading-relaxed">{loan.purpose}</p>
+                    <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
                       <div
-                        className="bg-orange-600 h-2 rounded-full transition-all duration-300"
+                        className="progress-bar h-3 rounded-full transition-all duration-500"
                         style={{ width: `${loan.progress}%` }}
                       ></div>
                     </div>
-                    <p className="text-xs text-gray-500 mt-1">{loan.progress}% repaid</p>
+                    <p className="text-xs font-medium text-gray-500 mt-2">{loan.progress}% repaid</p>
                   </div>
                 ))}
               </div>
@@ -132,57 +135,57 @@ const DashboardPage: React.FC = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <div className="space-y-6 animate-slide-in-right relative z-10">
             {/* Quick Actions */}
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
-              <div className="space-y-3">
+            <div className="card-enhanced rounded-2xl shadow-xl p-6 hover-lift">
+              <h3 className="text-lg font-bold text-gray-900 mb-6">Quick Actions</h3>
+              <div className="space-y-4">
                 <Link
                   to="/loan-request"
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-md font-medium transition-colors flex items-center justify-center"
+                  className="btn-primary w-full text-white py-3 px-4 rounded-lg font-semibold shadow-lg hover-glow transition-all duration-300 flex items-center justify-center group"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Request New Loan
                 </Link>
-                <button className="w-full border border-gray-300 hover:bg-gray-50 text-gray-700 py-2 px-4 rounded-md font-medium transition-colors">
+                <button className="w-full border-2 border-gray-200 hover:bg-orange-50 hover:border-orange-300 text-gray-700 py-3 px-4 rounded-lg font-semibold transition-all duration-300 hover-lift">
                   Make Payment
                 </button>
-                <button className="w-full border border-gray-300 hover:bg-gray-50 text-gray-700 py-2 px-4 rounded-md font-medium transition-colors">
+                <button className="w-full border-2 border-gray-200 hover:bg-orange-50 hover:border-orange-300 text-gray-700 py-3 px-4 rounded-lg font-semibold transition-all duration-300 hover-lift">
                   View History
                 </button>
               </div>
             </div>
 
             {/* Reputation Score */}
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Reputation Score</h3>
+            <div className="card-enhanced rounded-2xl shadow-xl p-6 hover-lift">
+              <h3 className="text-lg font-bold text-gray-900 mb-6">Reputation Score</h3>
               <div className="text-center">
-                <div className="text-4xl font-bold text-green-600 mb-2">94%</div>
-                <p className="text-gray-600 mb-4">Excellent standing</p>
-                <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-green-600 h-3 rounded-full" style={{ width: '94%' }}></div>
+                <div className="text-5xl font-bold text-green-600 mb-3 animate-number-count">94%</div>
+                <p className="text-gray-600 mb-6 font-medium">Excellent standing</p>
+                <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+                  <div className="bg-gradient-to-r from-green-500 to-green-600 h-4 rounded-full transition-all duration-1000" style={{ width: '94%' }}></div>
                 </div>
-                <p className="text-xs text-gray-500 mt-2">
+                <p className="text-xs font-medium text-gray-500 mt-3">
                   Based on 5 completed loans
                 </p>
               </div>
             </div>
 
             {/* Notifications */}
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Notifications</h3>
-              <div className="space-y-3">
-                <div className="flex items-start">
+            <div className="card-enhanced rounded-2xl shadow-xl p-6 hover-lift">
+              <h3 className="text-lg font-bold text-gray-900 mb-6">Notifications</h3>
+              <div className="space-y-4">
+                <div className="flex items-start p-3 bg-yellow-50 rounded-lg border border-yellow-200">
                   <AlertCircle className="h-5 w-5 text-yellow-500 mr-2 mt-0.5" />
                   <div>
-                    <p className="text-sm text-gray-900">Payment due soon</p>
+                    <p className="text-sm font-semibold text-gray-900">Payment due soon</p>
                     <p className="text-xs text-gray-500">0.02 BTC due in 3 days</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start p-3 bg-green-50 rounded-lg border border-green-200">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
                   <div>
-                    <p className="text-sm text-gray-900">Loan approved</p>
+                    <p className="text-sm font-semibold text-gray-900">Loan approved</p>
                     <p className="text-xs text-gray-500">Your 0.1 BTC loan was funded</p>
                   </div>
                 </div>
