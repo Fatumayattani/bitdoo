@@ -80,8 +80,8 @@ Over 1.4 billion people lack access to basic financial services. Traditional mic
 ---
 
 ## 👥 Team  
-**Fatuma Yattani** – [@fatumayattani](https://twitter.com/fatumayattani) (Ex-Microfinance SME)  
-**Samuel Ejalonibu** – Smart Contract Architect  
+**Fatuma Yattani** – Software Engineer 
+**Samuel Ejalonibu** – Software Engineer 
 
 ---
 
@@ -92,6 +92,7 @@ Bitdoo is **DeFi meets microfinance** – using Bitcoin and ICP to slash loan co
 
 **Let’s connect:**  
 📧 fyattani@gmail.com | 🐦 [@fatumayattani](https://twitter.com/fatumayattani)  
+📧 fyattani@gmail.com | 🐦 [@fatumayattani](https://twitter.com/fatumayattani) 
 
 --- 
 
