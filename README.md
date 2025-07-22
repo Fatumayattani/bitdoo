@@ -81,6 +81,7 @@ Over 1.4 billion people lack access to basic financial services. Traditional mic
 
 ## 👥 Team  
 **Fatuma Yattani** – Software Engineer 
+
 **Samuel Ejalonibu** – Software Engineer 
 
 ---
