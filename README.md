@@ -93,7 +93,7 @@ Bitdoo is **DeFi meets microfinance** – using Bitcoin and ICP to slash loan co
 
 **Let’s connect:**  
 📧 fyattani@gmail.com | 🐦 [@fatumayattani](https://twitter.com/fatumayattani)  
-📧 fyattani@gmail.com | 🐦 [@fatumayattani](https://twitter.com/fatumayattani) 
+📧 ejalonibuoluwaseyi@gmail.com | 🐦 [Samuel Ejalonibu](https://x.com/sammyoluwaseyi_) 
 
 --- 
 

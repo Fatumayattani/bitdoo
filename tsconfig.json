@@ -13,9 +13,14 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+     "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": false,
     "noEmit": true,
     "jsx": "react-jsx",
     "types": ["vite/client", "@testing-library/jest-dom"]
   },
   "include": ["src"]
+}
 }
