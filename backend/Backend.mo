@@ -5,7 +5,7 @@ import Principal "mo:base/Principal";
 actor Bitdoo {
 
   // Loan status definition
-  type LoanStatus = { #Requested; #Funded; #Repaid }; // Changed #Funded to #Funded for consistency with your usage
+  type LoanStatus = { #Requested; #Funded; #Repaid }; 
 
   // Loan structure
   type Loan = {
