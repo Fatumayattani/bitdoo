@@ -54,7 +54,7 @@ actor Bitdoo {
       if (loan.id == loanId and loan.status == #Requested) {
         let updatedLoan : Loan = {
           loan with
-          fundedBy = ?msg.caller; // Changed from Principal.fromActor(this) to msg.caller
+          fundedBy = ?msg.caller;
           status = #Funded;
         };
         updatedLoans := List.push(updatedLoan, updatedLoans);
