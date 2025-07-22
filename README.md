@@ -1,54 +1,101 @@
-# Vite + React + Motoko
+# 💸 Bitdoo  
+**Decentralized Bitcoin microloans for the unbanked — powered by ICP’s Chain Fusion**  
 
-### Get started directly in your browser:
+Bitdoo is a **trustless P2P lending platform** that connects global borrowers and lenders using Bitcoin smart contracts on the Internet Computer. No banks. No predatory fees. Just borderless financial access.  
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rvanasa/vite-react-motoko)
+🌐 **Live Demo:** [https://bitdoo.xyz](https://bitdoo.xyz) | 📌 **Mission:** *Democratize credit with programmable Bitcoin*  
 
-This template gives you everything you need to build a full-stack Web3 application on the [Internet Computer](https://internetcomputer.org/).
+---
 
-For an example of a real-world dapp built using this starter project, check out the [source code](https://github.com/dfinity/feedback) for DFINITY's [Developer Experience Feedback Board](https://dx.internetcomputer.org/).
+## 🌍 The Problem  
+Over 1.4 billion people lack access to basic financial services. Traditional microfinance fails them with:  
+- 🏦 **Centralized gatekeeping** (slow approvals, geographic exclusion)  
+- 💰 **Exploitative rates** (avg. 30%+ APR in developing markets)  
+- 📉 **Opacity** (borrowers can’t verify terms, lenders can’t audit flows)  
 
-## 📦 Create a New Project
+**Bitdoo solves this** by replacing middlemen with ICP smart contracts and Bitcoin’s censorship-resistant money.  
 
-Make sure that [Node.js](https://nodejs.org/en/) `>= 16` and [`dfx`](https://internetcomputer.org/docs/current/developer-docs/build/install-upgrade-remove) `>= 0.14` are installed on your system.
+---
 
-Run the following commands in a new, empty project directory:
+## ⚡ How Bitdoo Works  
+### For Borrowers  
+1️⃣ **Request a loan** – Set amount, term, and purpose (e.g., "$500 for farm supplies, 6 months")  
+2️⃣ **Get funded** – Lenders worldwide compete to fund your request  
+3️⃣ **Repay via BTC** – Automated schedule with on-chain transparency  
 
-```sh
-npx degit rvanasa/vite-react-motoko # Download this starter project
-dfx start --clean --background # Run dfx in the background
-npm run setup # Install packages, deploy canisters, and generate type bindings
+### For Lenders  
+1️⃣ **Browse vetted loans** – Filter by risk score, location, or category  
+2️⃣ **Fund securely** – BTC held in ICP smart contract escrow  
+3️⃣ **Earn yield** – Collect repayments + interest (no late fees – enforced by code)  
 
-npm start # Start the development server
-```
+**Tech backbone:**  
+- 🛡️ ICP canisters manage escrow/reputation (Motoko)  
+- ⛓️ Native Bitcoin integration via Chain Fusion  
+- 📱 Mobile-first UX for low-bandwidth users  
 
-When ready, run `dfx deploy --network ic` to deploy your application to the Internet Computer.
+---
 
-## 🛠️ Technology Stack
+## 🚀 Why This Matters  
+| Bitdoo | Traditional Microfinance |  
+|--------|--------------------------|  
+| 1-10% APR | 30-200% APR |  
+| 5-min approval | Weeks of paperwork |  
+| Global lenders | Local monopolies |  
+| Transparent ledger | Opaque accounting |  
 
-- [Vite](https://vitejs.dev/): high-performance tooling for front-end web development
-- [React](https://reactjs.org/): a component-based UI library
-- [TypeScript](https://www.typescriptlang.org/): JavaScript extended with syntax for types
-- [Sass](https://sass-lang.com/): an extended syntax for CSS stylesheets
-- [Prettier](https://prettier.io/): code formatting for a wide range of supported languages
-- [Motoko](https://github.com/dfinity/motoko#readme): a safe and simple programming language for the Internet Computer
-- [Mops](https://mops.one): an on-chain community package manager for Motoko
-- [mo-dev](https://github.com/dfinity/motoko-dev-server#readme): a live reload development server for Motoko
-- [@ic-reactor](https://github.com/B3Pay/ic-reactor): A suite of JavaScript libraries for seamless frontend development on the Internet Computer
+**Real-world impact:** A farmer in Kenya can borrow from a developer in Germany — with lower rates than local loan sharks.  
 
-## 📚 Documentation
+---
 
-- [Vite developer docs](https://vitejs.dev/guide/)
-- [React quick start guide](https://react.dev/learn)
-- [Internet Computer docs](https://internetcomputer.org/docs/current/developer-docs/ic-overview)
-- [`dfx.json` reference schema](https://internetcomputer.org/docs/current/references/dfx-json-reference/)
-- [Motoko developer docs](https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/motoko/)
-- [Mops usage instructions](https://j4mwm-bqaaa-aaaam-qajbq-cai.ic0.app/#/docs/install)
-- [@ic-reactor/react](https://b3pay.github.io/ic-reactor/modules/react.html)
+## 🔥 Key Features  
+✔ **Programmable Bitcoin loans** – Terms enforced by ICP smart contracts  
+✔ **Dynamic reputation system** – Borrowers build credit history on-chain  
+✔ **Lender safeguards** – Escrow, partial repayments, default triggers  
+✔ **Zero custody risk** – Non-custodial design (even we can’t touch funds)  
 
-## 💡 Tips and Tricks
+---
 
-- Customize your project's code style by editing the `.prettierrc` file and then running `npm run format`.
-- Reduce the latency of update calls by passing the `--emulator` flag to `dfx start`.
-- Install a Motoko package by running `npx ic-mops add <package-name>`. Here is a [list of available packages](https://mops.one/).
-- Split your frontend and backend console output by running `npm run frontend` and `npm run backend` in separate terminals.
+## 🛠️ Tech Stack  
+**Frontend:** React + TypeScript (Radix UI, Tailwind)  
+**Smart Contracts:** Motoko on ICP (Internet Computer)  
+**Bitcoin Integration:** ICP Chain Fusion (native BTC txns)  
+**Data:** Recharts for lender analytics  
+**Deployment:** Netlify (CI/CD)  
+
+---
+
+## 🧗 Challenges Overcome  
+- **Bitcoin <> ICP Sync** – Debugged Chain Fusion latency issues  
+- **Trustless Reputation** – Designed sybil-resistant scoring without KYC  
+- **Loan States** – Handled edge cases (partial repayments, grace periods)  
+
+---
+
+## 📈 What’s Next?  
+- **Mainnet launch** (BTC loans on ICP)  
+- **AI risk modeling** – Predict default likelihood via repayment history  
+- **Mobile app** – USSD/SMS support for feature phones  
+- **DAO governance** – Community-set interest rate caps  
+
+---
+
+## 👥 Team  
+**Fatuma Yattani** – [@fatumayattani](https://twitter.com/fatumayattani) (Ex-Microfinance SME)  
+**Samuel Ejalonibu** – Smart Contract Architect  
+
+---
+
+## 💡 TL;DR  
+Bitdoo is **DeFi meets microfinance** – using Bitcoin and ICP to slash loan costs for the unbanked. No banks. No borders. Just code-enforced trust.  
+
+> *“If Bitcoin is digital gold, Bitdoo turns it into digital seed capital.”*  
+
+**Let’s connect:**  
+📧 fyattani@gmail.com | 🐦 [@fatumayattani](https://twitter.com/fatumayattani)  
+
+--- 
+
+### 🖼️ Screenshots  
+*(Add a carousel of: loan request UI, lender dashboard, mobile view)*  
+
+---
