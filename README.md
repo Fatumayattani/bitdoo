@@ -37,6 +37,9 @@ graph LR
 2. **Fund**: Non-custodial ICP escrow
 3. **Earn**: Yield from repayments + interest (1-10% APR)
 
+![Bitdoo Header](public/bit2.png)
+
+
 ## 🚀 Why Bitdoo is Sustainable
 
 | Factor | Our Advantage |
