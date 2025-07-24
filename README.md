@@ -29,7 +29,7 @@ graph LR
 2. **Get Funded**: Global lenders compete to fund
 3. **Repay**: Automated BTC repayments build on-chain credit
 
-![Bitdoo Header](public/bit2.png)
+![Bitdoo Header](public/bit3.png)
 
 
 ### For Lenders
