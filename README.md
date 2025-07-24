@@ -1,11 +1,5 @@
-# 🌍 Bitdoo - Decentralized Bitcoin Microloans for the Unbanked
+# 🌍 Bitdoo - Decentralized Bitcoin Microloans for the Unbanked powered by ICP's Chain Fusion technology
 
-![Bitdoo Header](bitdoo.png)
-
-**Trustless P2P lending powered by ICP's Chain Fusion technology**  
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20App-green)](https://bitdoo.xyz)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Twitter](https://img.shields.io/twitter/follow/bitdooxyz?style=social)](https://twitter.com/bitdooxyz)
 
 ## 📌 Mission Statement
 Democratize credit access by enabling programmable Bitcoin loans through Internet Computer smart contracts - eliminating predatory middlemen in microfinance.
