@@ -215,15 +215,15 @@ Users can convert `ckBTC` back to native Bitcoin via the **ckBTC minter** within
 
 ## 🌱 Roadmap
 
-**Q3 2024**  
+**Q3 2025**  
 - Mainnet BTC loans launch
 - SMS repayment notifications
 
-**Q4 2024**  
+**Q4 2025**  
 - AI risk modeling pilot
 - DAO governance prototype
 
-**2025**  
+**2026**  
 - USSD support for feature phones
 - Cross-chain repayment options
 
