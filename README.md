@@ -29,6 +29,9 @@ graph LR
 2. **Get Funded**: Global lenders compete to fund
 3. **Repay**: Automated BTC repayments build on-chain credit
 
+![Bitdoo Header](public/bit2.png)
+
+
 ### For Lenders
 1. **Browse**: Filter by risk score/category/location
 2. **Fund**: Non-custodial ICP escrow
