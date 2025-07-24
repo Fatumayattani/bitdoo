@@ -29,7 +29,7 @@ graph LR
 2. **Get Funded**: Global lenders compete to fund
 3. **Repay**: Automated BTC repayments build on-chain credit
 
-![Bitdoo Header](public/bit3.png)
+![Bitdoo Header](public/bit2.png)
 
 
 ### For Lenders
@@ -37,7 +37,7 @@ graph LR
 2. **Fund**: Non-custodial ICP escrow
 3. **Earn**: Yield from repayments + interest (1-10% APR)
 
-![Bitdoo Header](public/bit2.png)
+![Bitdoo Header](public/bit3.png)
 
 
 ## 🚀 Why Bitdoo is Sustainable
