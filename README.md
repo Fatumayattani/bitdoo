@@ -77,6 +77,96 @@ flowchart TB
 3. **Reputation System**: On-chain credit scoring
 4. **Radix UI**: Accessible frontend components
 
+## 🚀 Installation
+
+To get Bitdoo up and running locally, follow these steps:
+
+### Prerequisites
+
+- ✅ [Node.js](https://nodejs.org/) (v18 or higher recommended)  
+- ✅ [DFX SDK](https://internetcomputer.org/docs/current/developer-docs/setup/install/)  
+- ✅ [Git](https://git-scm.com/)  
+- ✅ A wallet that supports Internet Identity (Plug, NFID, or Bitfinity)
+
+---
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Fatumayattani/bitdoo.git
+cd bitdoo
+````
+
+---
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3. Start the Local ICP Replica (for development)
+
+```bash
+dfx start --background
+```
+
+---
+
+### 4. Deploy Canisters Locally
+
+```bash
+dfx deploy
+```
+
+---
+
+## ⚙️ Usage
+
+### 1. Run the Frontend in Dev Mode
+
+```bash
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+### 2. Connect Your Wallet
+
+Bitdoo supports:
+
+* [Plug Wallet](https://plugwallet.ooo/)
+* [NFID Wallet](https://nfid.one/)
+* [Bitfinity Wallet](https://bitfinity.network/)
+
+Make sure your wallet is set to the correct network (local or mainnet/testnet depending on deployment).
+
+![Bitdoo Header](public/bit4.png)
+
+---
+
+### 3. Lend or Borrow Bitcoin (ckBTC)
+
+* **Lenders** deposit ckBTC and earn interest.
+* **Borrowers** request microloans and repay using ckBTC.
+* All lending logic is powered by canister smart contracts on the Internet Computer.
+
+---
+
+### 4. (Optional) Withdraw to Real BTC
+
+Users can convert `ckBTC` back to native Bitcoin via the **ckBTC minter** within the app.
+
+---
+
+> 💡 Tip: For mainnet deployment instructions or to request testnet ckBTC, refer to the official Internet Computer documentation or the Bitdoo Wiki (coming soon).
+
+```
+
 ## 🔥 Unique Value Proposition
 
 **For Borrowers:**
@@ -116,7 +206,7 @@ flowchart TB
 - React + TypeScript
 - Radix UI (accessibility-focused)
 - Tailwind CSS
-- WalletConnect integration
+- Wallet integration
 
 **Backend:**
 - Internet Computer Protocol
@@ -145,13 +235,3 @@ flowchart TB
 | Lead Engineer | Fatuma Yattani | [@fatumayattani](https://twitter.com/fatumayattani) |
 | Protocol Dev | Samuel Ejalonibu | [@samueleja](https://twitter.com/samueleja) |
 
-## 💡 Get Involved
-
-- **Build with us**: `git clone https://github.com/bitdoo/core`
-- **Report issues**: GitHub Issues
-- **Community**: [Discord](https://discord.gg/bitdoo)
-
-## License
-Apache 2.0 - See [LICENSE.md](LICENSE.md)
-
----
