@@ -71,6 +71,8 @@ flowchart TB
 
 **Key Components:**
 1. **Motoko Smart Contracts**: Loan lifecycle management
+![Bitdoo Header](public/bit6.png)
+
 2. **Chain Fusion**: Native Bitcoin transaction processing
 3. **Reputation System**: On-chain credit scoring
 4. **Radix UI**: Accessible frontend components
