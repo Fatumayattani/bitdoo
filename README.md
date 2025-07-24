@@ -143,7 +143,6 @@ Bitdoo supports:
 * [NFID Wallet](https://nfid.one/)
 * [Bitfinity Wallet](https://bitfinity.network/)
 
-Make sure your wallet is set to the correct network (local or mainnet/testnet depending on deployment).
 
 ![Bitdoo Header](public/bit4.png)
 
@@ -232,6 +231,6 @@ Users can convert `ckBTC` back to native Bitcoin via the **ckBTC minter** within
 
 | Role | Name | Contact |
 |------|------|---------|
-| Lead Engineer | Fatuma Yattani | [@fatumayattani](https://twitter.com/fatumayattani) |
-| Protocol Dev | Samuel Ejalonibu | [@samueleja](https://twitter.com/samueleja) |
+| Blockchain Developer | Fatuma Yattani | [@fatumayattani](https://twitter.com/fatumayattani) |
+| Software Engineer | Samuel Ejalonibu | [@samueleja](https://twitter.com/samueleja) |
 
