@@ -1,6 +1,6 @@
 # 🌍 Bitdoo - Decentralized Bitcoin Microloans for the Unbanked
 
-![Bitdoo Header](https://via.placeholder.com/1200x400/000000/FFFFFF?text=Bitdoo+-+Borderless+Bitcoin+Loans+on+ICP)
+![Bitdoo Header](bitdoo.png)
 
 **Trustless P2P lending powered by ICP's Chain Fusion technology**  
 [![Live Demo](https://img.shields.io/badge/Demo-Live%20App-green)](https://bitdoo.xyz)
