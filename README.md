@@ -5,6 +5,8 @@
 ## 📌 Mission Statement
 Democratize credit access by enabling programmable Bitcoin loans through Internet Computer smart contracts - eliminating predatory middlemen in microfinance.
 
+![Bitdoo Header](public/bit1.png)
+
 ```mermaid
 graph LR
     A[Borrower] -->|Loan Request| B[ICP Smart Contract]
